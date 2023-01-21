@@ -1,0 +1,165 @@
+@import 'variables';
+@import 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    img {
+        height: 50px;
+    }
+
+    .section-banner {
+        @include bannerOneImg($bannerUrlOneImg, $fontFamilyBannerOneImg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1 {
+            padding: 20px;
+            background: $title;
+            font-weight: bold;
+            width: max-content;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        p{
+            background-color: $bg-primay;
+            padding: 5px;
+            font-size: 18px;
+        }
+    }
+}
+
+.section-brand {
+    background-color: $bg-list;
+
+    img {
+        width: 100%;
+        height: 100px;
+        padding: 4px;
+
+        &:hover {
+            background-color: $bg-primay;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+    }
+}
+
+.section-carousel {
+    padding-left: 0;
+    padding-right: 0;
+
+    .carousel {
+        img {
+            height: 40em;
+        }
+    }
+}
+
+#main {
+    .video{
+        width: 100%;
+        height: 20em;
+        background-image: url("../assets/images/video-img.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &:hover{
+            color: $title;
+            cursor: pointer;
+        }
+        svg{
+            transform: scale(5);
+            
+        }
+    }
+    .section-card-car {
+        .scroll-y {
+            overflow-y: auto;
+            height: 40em;
+
+            .card {
+                &:nth-child(odd) {
+                    background-color: $bg-secondary;
+                    padding: 0.5em;
+                    color: $bg-primay;
+                }
+
+                &:nth-child(even) {
+                    background-color: $bg-warn;
+                    padding: 0.5em;
+                }
+
+                img {
+                    border-radius: 5px;
+                    height: 10em;
+                }
+            }
+
+            &::-webkit-scrollbar-track {
+                background-color: transparent;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: $bg-secondary;
+            }
+
+            &::-webkit-scrollbar {
+                width: 8px;
+                height: 8px;
+            }
+        }
+    }
+
+    .row-gallery {
+        padding: 1em 0;
+
+        &:nth-child(2n) {
+            background-color: $bg-list;
+            margin: 0;
+            color: $bg-primay;
+        }
+    }
+}
+
+td {
+    padding: 2em !important;
+}
+
+.btn {
+    @include btn-style($bg-secondary, $bg-primay, auto);
+}
+
+fieldset {
+    padding: 2em;
+    margin-bottom: 2em;
+
+    div {
+        margin-bottom: 1em;
+    }
+}
+
+footer {
+    background-color: #222221;
+    color: $bg-primay;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .section-brand {
+        img {
+            width: 10em;
+            height: 100px;
+            padding: 1em;
+        }
+    }
+
+    table {
+        overflow: scroll;
+    }
+}

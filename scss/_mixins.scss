@@ -1,0 +1,18 @@
+@mixin btn-style($background, $bg-primay, $width){
+    background-color: $background;
+    padding: 1em;
+    color: $bg-primay;
+    font-weight: bold;
+    width: $width;
+}
+
+@mixin bannerOneImg($urlImg, $fontFamily){
+    height: 40em;
+    background-image: url($urlImg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: $fontFamily;
+}
+

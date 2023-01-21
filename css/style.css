@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header img {
+  height: 50px; }
+
+header .section-banner {
+  height: 40em;
+  background-image: url("../assets/images/banner1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Rubik Distressed", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  header .section-banner h1 {
+    padding: 20px;
+    background: #FDE231;
+    font-weight: bold;
+    width: max-content;
+    font-size: 50px;
+    margin-bottom: 20px; }
+  header .section-banner p {
+    background-color: #ffffff;
+    padding: 5px;
+    font-size: 18px; }
+
+.section-brand {
+  background-color: #36382E; }
+  .section-brand img {
+    width: 100%;
+    height: 100px;
+    padding: 4px; }
+    .section-brand img:hover {
+      background-color: #ffffff;
+      cursor: pointer;
+      transition: all 0.2s; }
+
+.section-carousel {
+  padding-left: 0;
+  padding-right: 0; }
+  .section-carousel .carousel img {
+    height: 40em; }
+
+#main .video {
+  width: 100%;
+  height: 20em;
+  background-image: url("../assets/images/video-img.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #main .video:hover {
+    color: #FDE231;
+    cursor: pointer; }
+  #main .video svg {
+    transform: scale(5); }
+
+#main .section-card-car .scroll-y {
+  overflow-y: auto;
+  height: 40em; }
+  #main .section-card-car .scroll-y .card:nth-child(odd) {
+    background-color: #FF7D28;
+    padding: 0.5em;
+    color: #ffffff; }
+  #main .section-card-car .scroll-y .card:nth-child(even) {
+    background-color: #FFDF32;
+    padding: 0.5em; }
+  #main .section-card-car .scroll-y .card img {
+    border-radius: 5px;
+    height: 10em; }
+  #main .section-card-car .scroll-y::-webkit-scrollbar-track {
+    background-color: transparent; }
+  #main .section-card-car .scroll-y::-webkit-scrollbar-thumb {
+    background-color: #FF7D28; }
+  #main .section-card-car .scroll-y::-webkit-scrollbar {
+    width: 8px;
+    height: 8px; }
+
+#main .row-gallery {
+  padding: 1em 0; }
+  #main .row-gallery:nth-child(2n) {
+    background-color: #36382E;
+    margin: 0;
+    color: #ffffff; }
+
+td {
+  padding: 2em !important; }
+
+.btn {
+  background-color: #FF7D28;
+  padding: 1em;
+  color: #ffffff;
+  font-weight: bold;
+  width: auto; }
+
+fieldset {
+  padding: 2em;
+  margin-bottom: 2em; }
+  fieldset div {
+    margin-bottom: 1em; }
+
+footer {
+  background-color: #222221;
+  color: #ffffff;
+  font-weight: bold; }
+
+@media only screen and (max-width: 600px) {
+  .section-brand img {
+    width: 10em;
+    height: 100px;
+    padding: 1em; }
+  table {
+    overflow: scroll; } }

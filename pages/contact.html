@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Encuentra a tu auto perfecto entre las marcas que tenemos disponibles para ti. Te ayudamos a escoger a tu compañero para que tus viajes se conviertan en momento únicos.">
+    <meta name="keywords"
+        content="toyota, geely, peugeot, kia, mazda, chevrolet, auto, autos, camioneta, camionetas, baratos, paseo, playa, campo, selva, montañas, terreno">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="../assets/icons/icon.png" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top" id="navbar">
+                <div class="container">
+                    <a class="navbar-brand">
+                        <img src="../assets/images/logo.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#phone-menu"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="phone-menu">
+                        <ul class="navbar-nav ms-auto flex-column flex-md-row">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./cars.html">Autos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./services.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">Sobre nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <section class="section-carousel">
+                <div class="">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../assets/images/banner3.jpg" class="d-block w-100" alt="banner3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/images/banner2.jpg" class="d-block w-100" alt="banner2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/images/banner4.jpg" class="d-block w-100" alt="banner4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main class="container-fluid mt-4 pb-4" id="main">
+        <div class="container">
+            <div class="row ">
+                <div class="col">
+
+                    <section class="form-section contactForm">
+                        <h2 style="background-color: #FFDF32;">Envíanos un mensaje:</h2>
+                        <form>
+                            <fieldset>
+                                <h2 class="text-secondary">Información Personal</h2>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="date" class="form-label">Nombre</label>
+                                    <input type="date" class="form-control" id="date">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <h2 class="text-secondary">Información Adicional</h2>
+                                <div class="mb-3">
+                                    <label class="form-label"> ¿Es cliente nuestro?</label>
+                                    <label for="clientesi">Si</label>
+                                    <input type="radio" name="escliente" id="clientesi" value="si" required>
+                                    <label for="clienteno">No</label>
+                                    <input type="radio" name="escliente" id="clienteno" value="no">
+                                </div>
+                                <div>
+                                    <label class="form-label"> Marca de auto</label>
+                                    <select name="" id="">
+                                        <option value="OP1">Geely</option>
+                                        <option value="OP2">Toyota</option>
+                                        <option value="OP3">Mazda</option>
+                                        <option value="OP3">Chevroler</option>
+                                        <option value="OP3">Peugeout</option>
+                                        <option value="OP3">KIA</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <textarea class="form-control" name="" id="" cols="30" rows="10"
+                                        placeholder="Indique su problema"></textarea>
+                                </div>
+                            </fieldset>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+
+
+    </main>
+    <footer class="text-center pt-3 pb-3">
+        Copyright ©2022 Autotriz
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
